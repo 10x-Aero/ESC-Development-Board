@@ -31,12 +31,6 @@ _autosave-*
 *-bom.csv
 *.pos
 
-# 3D render output
-*.png
-*.jpg
-!docs/**/*.png
-!docs/**/*.jpg
-
 # Simulation
 *.net
 *.cir
