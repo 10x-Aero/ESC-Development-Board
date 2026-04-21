@@ -1,0 +1,54 @@
+# KiCad
+
+# Autosave and backup files
+*-bak
+*.bak
+*.bck
+*-backups/
+_autosave-*
+*.kicad_prl
+
+# Generated fabrication/assembly outputs
+/gerbers/
+/fab/
+/production/
+*.gbr
+*.gbl
+*.gtl
+*.gbs
+*.gts
+*.gbo
+*.gto
+*.gbp
+*.gtp
+*.gm1
+*.gml
+*.drl
+*.xln
+
+# Pick & place / BOM
+*-pos.csv
+*-bom.csv
+*.pos
+
+# 3D render output
+*.png
+*.jpg
+!docs/**/*.png
+!docs/**/*.jpg
+
+# Simulation
+*.net
+*.cir
+*.raw
+
+# Lock files
+*.lck
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor
+*.swp
+*~
