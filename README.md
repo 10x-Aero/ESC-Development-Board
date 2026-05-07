@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/5f652ef7-dc9c-4700-bebd-08a81333550c
+
 # ESC Development Board
 
 A 6S AM32-compatible ESC built as a proof of concept for learning how to design an ESC from scratch. It gets a motor spinning — that's about the extent of what's guaranteed. Beyond that, expect rough edges.
@@ -69,6 +73,10 @@ The design is sloppy in places. If you spot schematic, layout, or component choi
 ![VBAT ripple — mid throttle](images/TestScreenshot2.png)
 
 ![VBAT ripple — high throttle](images/TestScreenshot3.png)
+
+
+https://github.com/user-attachments/assets/3ce99b9d-343a-43b4-ace9-065e4792fe87
+
 
 ## Known mistakes
 
