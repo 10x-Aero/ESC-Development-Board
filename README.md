@@ -27,7 +27,7 @@ The design is sloppy in places. If you spot schematic, layout, or component choi
 </p>
 <p align="center">
   <img src="images/L3.png" width="48%" alt="Layer 3">
-  <img src="images/L4.png" width="48%" alt="Layer 4 — Bottom">
+  <img src="images/L4.png" width="48%" alt="Layer 4 — Bottom" >
 </p>
 
 ![PCB](images/PCB.png)
