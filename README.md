@@ -32,6 +32,42 @@ The design is sloppy in places. If you spot schematic, layout, or component choi
 
 ![PCB](images/PCB.png)
 
+## Testing
+
+### Setup
+
+- **Motor:** AOS Supernova 3220 925KV
+- **Battery:** 6S LiPo
+- **Prop:** 7×7
+- **Bulk cap:** 1000 µF
+- **Measurement:** AC-coupled VBAT ripple, probed directly at the battery solder pads
+
+### Throttle sequence
+
+| t (s) | Action         | Throttle | Duration |
+| ----- | -------------- | -------- | -------- |
+| 0.0   | Idle           | —        | 1.0 s    |
+| 1.0   | Ramp           | 0 → 20%  | 1.5 s    |
+| 2.5   | Hold (capture) | 20%      | 2.0 s    |
+| 4.5   | Ramp           | 20 → 35% | 0.8 s    |
+| 5.3   | Hold (capture) | 35%      | 2.0 s    |
+| 7.3   | Ramp           | 35 → 50% | 0.8 s    |
+| 8.1   | Hold (capture) | 50%      | 2.0 s    |
+| 10.1  | Ramp           | 50 → 65% | 0.8 s    |
+| 10.9  | Hold (capture) | 65%      | 2.0 s    |
+| 12.9  | Ramp           | 65 → 80% | 0.8 s    |
+| 13.7  | Hold (capture) | 80%      | 2.0 s    |
+| 15.7  | Ramp           | 80 → 95% | 0.8 s    |
+| 16.5  | Hold (capture) | 95%      | 2.0 s    |
+| 18.5  | Ramp down      | 95 → 0%  | 1.5 s    |
+| 20.0  | End            | —        | —        |
+
+### Results
+
+![VBAT ripple — low throttle](images/TestScreenshot1.png)
+![VBAT ripple — mid throttle](images/TestScreenshot2.png)
+![VBAT ripple — high throttle](images/TestScreenshot3.png)
+
 ## Known mistakes
 
 - The DRV8300DPWR has internal bootstrap diodes, so the external bootstrap diodes on this design are redundant. Doesn't break anything — just unnecessary parts cost and board area.
