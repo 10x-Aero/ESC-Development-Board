@@ -65,7 +65,9 @@ The design is sloppy in places. If you spot schematic, layout, or component choi
 ### Results
 
 ![VBAT ripple — low throttle](images/TestScreenshot1.png)
+
 ![VBAT ripple — mid throttle](images/TestScreenshot2.png)
+
 ![VBAT ripple — high throttle](images/TestScreenshot3.png)
 
 ## Known mistakes
